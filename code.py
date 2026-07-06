@@ -77,4 +77,5 @@ student={
 print(student.clear())#clear method
 #dict are useful for storing student records
 #storing employeee details
+print("jiya")
 
