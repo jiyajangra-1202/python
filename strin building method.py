@@ -46,3 +46,4 @@ print(len(text))#length string
 print(text[5])
 print(text[2:3])
 print(text[-7:-3])
+print("hehehe")
