@@ -34,3 +34,4 @@ if "python" in message:
     print(message.lower())#smaller letter
     print(message.replace('great','awesome'))#replace
     print(message.split())#spilt(gap removed)
+    print('hloo')
