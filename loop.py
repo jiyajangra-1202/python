@@ -9,3 +9,45 @@ for i in range(1,6):
     print(i)    #print numbers
     for i in range(5):
         print("Jiya")#print a name 5 times
+        #loop through a string
+name="python"   
+for letter in name:
+    print(letter)
+    #loop through a list
+    fruits=["apple","banana","orange"]
+    for fruit in fruits:
+        print(fruit)
+
+#range
+for x in range(2,16):
+    print(x)
+
+    for x in range(0,20,3):
+        print(x)#even number
+  #while loop(executes as long as condition is True)
+
+# count=0
+# while count<5:
+#     print(count)
+#     count +=1
+password="1234"
+while password!="secrect":
+    password=input("enter your password:")
+    print("access granted")    
+
+
+#LOOP CONTROL STATEMENTS:-
+# IT CONTROL THE FLOW OF LOOPS.
+##1.break:stops the loop immediately.
+# for i in range(1,6):
+#     if i==4:
+#         break
+#     print(i)    
+# words="Artifical"
+# for x in words:
+#     print(x)
+# ##2.continue:-skips the current iteration and moves to the next one.
+# for i in range(1,6):
+#     if i==3:
+#         continue
+#     print(i)
