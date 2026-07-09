@@ -30,10 +30,26 @@ for x in range(2,16):
 # while count<5:
 #     print(count)
 #     count +=1
-password="1234"
-while password!="secrect":
-    password=input("enter your password:")
-    print("access granted")    
+# password="1234"
+# while password.strip() !="secrect":
+#     password=input("enter your password:")
+#     print("access granted")    
+
+# total=0
+# number=int(input("enter a number:"))
+
+# while number !=0:
+#     total += number
+#     number=int(input("enter another number:"))
+
+# print("Total:",total)  
+
+# secret_number=7
+# guess=0
+# while guess !=secret_number:
+#     guess=int(input("guess the number:"))
+
+# print("Correct!")    
 
 
 #LOOP CONTROL STATEMENTS:-
@@ -52,7 +68,12 @@ while password!="secrect":
 #         continue
 #     print(i)
 #Sum of 1 to 20 using for loop
-sum=0
-for i in range(1,21)
-sum=sum+i
-print("sum=",sum)
+# sum=0
+# for i in range(1,21):
+#  sum=sum+i
+# print("sum=",sum)
+numbers=[1,2,3,4,5]
+for number in numbers:
+    if number % 2 == 0:
+        continue
+    print(number)
