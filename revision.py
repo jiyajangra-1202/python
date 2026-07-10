@@ -404,14 +404,4 @@ student={
 print(student.keys())#returns all keys
 print(student.values())#returns all values
 print(student.items())#returns all items
-student={
-    "name":"Jiya",
-    "age":19,
-     "course":"BCA"
-     }
 
-student.update({
-    "distict":"mahendergarh",
-    "date":10
-    })
-print(student)#add or update multiple items
