@@ -10,3 +10,4 @@ student={
     }
 }
 print(student["student1"]["name"])
+
