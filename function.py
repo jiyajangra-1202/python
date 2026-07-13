@@ -74,3 +74,23 @@ def student(name,age,city):
     print("City:",city)
 student(name="jiya",age=19,city="delhi")    
 student(city="mumbai",name="moni",age=21)   #ordered can be changed 
+
+
+def calculate(a,b=2):
+ a=a+b
+ b=a*b
+ return a,b
+x,y=calculate(3)
+print(x+y)
+#  print(a+b)
+#  print(a-b)
+#  print(a*b)
+#  print(a/b)
+#  return a+b,a-b,a*b,a/b
+# result=calculate(2,5)
+# print(result)
+
+
+
+    
+
