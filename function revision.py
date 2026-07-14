@@ -175,3 +175,8 @@ def add(a,b):
 result=add(10,20)
 print("sum=",result)#add two numbers
 
+###Practice question:-
+def calculate(a,b=3,c=4):
+    return a*b-c
+print(calculate(5,c=2))
+
