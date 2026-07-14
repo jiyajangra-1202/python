@@ -176,7 +176,121 @@ result=add(10,20)
 print("sum=",result)#add two numbers
 
 ###Practice question:-
-def calculate(a,b=3,c=4):
-    return a*b-c
-print(calculate(5,c=2))
+# def calculate(a,b=3,c=4):
+#     return a*b-c
+# print(calculate(5,c=2))
 
+##Variable-length arguments:-
+#Someetimes we do not know how many arguments will be passed to a function.
+# in such cases we use *ar/gs//
+#*args stores multiple positional arguments to a tuple
+def add_numbers(*numbers):
+    total=0
+    for num in numbers:
+        total +=num
+        return total
+print(add_numbers(10,20))
+print(add_numbers(5,10,15,20))    
+##Another example:-
+def show_names(*names):
+    for name in names:
+        print(name)
+show_names("jiya","moni","mahak")        
+#you can combine regular parameters with *args.
+def student(grreeting,*numbers):
+    for name in numbers:
+        print(numbers)
+student(10,20,30,40,50)   
+##Keyword argument in variable-length:-
+##it can stores data in dictionary.
+def show_details(**details):
+    for key,value in details.items():
+        print(key,":",value)
+show_details(name="rohit",age=15,city="pune")  
+print(type(show_details))      
+# another examples:-
+def create_profile(**user):
+    print("user profile")
+    print("name:",user.get("name"))
+    print("age:",user.get("age"))
+    print("email:",user.get("email"))
+create_profile(name="sneha",age=25,email="sneha@example.com")    
+###Local and global variables
+# variables create inside function are called local variable.
+language="python"
+def my_function():
+ print("language:",language)
+print(language)
+##Example:-
+count=0
+def increase():
+    global count
+    count +=1
+increase()
+increase()
+print(count)
+
+##Function documentation:Docstrings
+#it is a short description of what a function does.
+#it is written inside a triple quotes
+def square(number):
+    """
+    this function return the square of a number
+    """
+    return number*number
+print(square(5))
+print(square.__doc__)
+#it is useful for explaining your code.
+##Type hints in functions:-it show types of data a function expects  and returns.
+#example:-
+def add(a:int,b:int) ->int:
+    return a+b
+print(add(10,20))
+#it do not force the type at runtime, but they make code easier to understand
+##LAMBDA FUNCTION:-it is a small anonymous function.
+#it is usually used for short operations.
+##Example:-
+# lambda arguments:expression (syntax)
+square=lambda x:x*x
+print(square(5))
+##Another examples:-
+add=lambda a,b:a+b
+print(add(7,8))
+#these are commonly used with function like map(),filter(),sorted()
+##Using Function with lists.
+marks=[10,440,67,87]
+def largest(numbers):
+    largest=numbers[0]
+    for number in numbers:
+        if number>largest:
+            largest=number
+        # return largest
+marks=[10,440,67,87]    
+print(largest(marks))
+##Function calling other functions
+#this helps divide a big problem into smaller parts
+#example:
+def get_square(number):
+    return number*number
+def print_square(number):
+    result=get_square(number)
+    print("square:",result)
+
+print_square(8)    
+
+##Nested function
+# example:-
+def outer_function():
+    print("this is outer function")
+
+##Recursion:-it means a function call itself
+#a base condition to stop recursive.
+#base case= a condition that stops the recursion
+#recursive case= the function calling itself with a modified arguments
+#without a base case, 
+def factorial(n):
+    if n==0 :
+     return 1
+    else:
+     return n * factorial(n-1)
+print(factorial(6))
