@@ -347,18 +347,18 @@ def report(name, *, score=0, passed=True):
 print(report("Riya", score=88))
 print(report("Kabir", passed=False, score=40)) 
 # ##9.
-# def change(number):   
-#      number += 10    
-#      return number 
-# value = 5  
-# print(change(value), value)  
-# ##10.
-# def update(data):    
-#      data[0] += 5  
-#      data.append(sum(data))  
-# numbers = [1, 2, 3] 
-# update(numbers) 
-# print(numbers) 
+def change(number):   
+     number += 10    
+     return number 
+value = 5  
+print(change(value), value)  
+##10.
+def update(data):    
+     data[0] += 5  
+     data.append(sum(data))  
+numbers = [1, 2, 3] 
+update(numbers) 
+print(numbers) 
 # ##11.
 # def update(data):
 #          data = data + [4]   
