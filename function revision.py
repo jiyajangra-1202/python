@@ -435,3 +435,101 @@ print(result)
 # def transform(number):  
 #      return number * number - 1  
 # print(apply(transform, [1, 2, 3, 4]))
+#question20.
+numbers = [1, 2, 3, 4, 5] 
+result = list(     map(         lambda number: number * 2,       
+                         filter(lambda number: number % 2 == 1, numbers)     ) ) 
+print(result) 
+#ques21.
+def add(a, b):    
+     return a + b 
+def multiply(a, b):  
+     return a * b
+operations = {     "addition": add,     "multiplication": multiply }  
+result = (     operations["addition"](2, 3)     + operations["multiplication"](2, 3) )  
+print(result) 
+##e.Recursive 
+#ques22.
+def calculate(number): 
+        if number <= 1:   
+                  return 1   
+        return number + calculate(number - 2) 
+print(calculate(6))
+##ques23.
+def trace(number):  
+       if number == 0:  
+        return   
+       print(number, end=" ")   
+       trace(number - 1)   
+       print(number, end=" ")  
+               
+trace(3)
+##ques24.
+def flatten(data):  
+       result = []     
+       for item in data:     
+            if isinstance(item, list):         
+                    result.extend(flatten(item))       
+            else:           
+                    result.append(item)  
+                    return 
+            result  
+values = [1, [2, [3, 4]], 5] 
+print(flatten(values))
+#F.Generators and Decorators:-
+##ques25.
+def sequence(number): 
+        while number > 0:    
+                 yield number       
+                 number -= 2  
+                 result = sequence(5)
+                 print(next(result)) 
+                 print(list(result)) 
+##ques26.
+def increase(function):   
+      def wrapper(number):        
+       return function(number) + 1     
+      return wrapper 
+@increase 
+def square(number):
+         return number * number 
+print(square(4))
+##ques27.
+def double(function):
+         def wrapper(number):        
+             return 2 * function(number)    
+         return wrapper  
+def add_one(function):    
+    def wrapper(number):    
+     return function(number) + 1    
+    return wrapper 
+@double 
+@add_one
+def calculate(number): 
+    return number  
+print(calculate(5)) 
+##Advanced behaviour
+##ques28.
+def combine(a: int, b: int) -> int:   
+      return str(a) + str(b)  
+result = combine(2, 3) 
+print(result)
+print(type(result).__name__)
+##ques29.
+x = 10 
+def display():     
+    print(x)    
+    x = 20  
+    display()
+##ques30.
+def modify(values):   
+     for index, value in enumerate(values):   
+              if value % 2 == 0:       
+                      values[index] = value // 2      
+              else:          
+                      values[index] = value * 3 + 1    
+                      return tuple(reversed(values)) 
+numbers = [1, 2, 3, 4]
+result = modify(numbers)  
+print(numbers) 
+print(result) 
