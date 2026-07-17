@@ -61,3 +61,5 @@ if age>=18 and marks>=75:
   if not is_raining:
    print("Go outside") #Reverses the condition.
 
+
+Java
