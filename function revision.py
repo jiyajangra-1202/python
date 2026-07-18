@@ -517,9 +517,9 @@ print(result)
 print(type(result).__name__)
 ##ques29.
 x = 10 
-def display():     
-    print(x)    
-    x = 20  
+def display():        
+    x = 20 
+    print(x) 
     display()
 ##ques30.
 def modify(values):   
