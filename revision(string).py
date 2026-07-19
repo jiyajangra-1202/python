@@ -32,7 +32,42 @@ Text="I AM a python learner"
 count=0
 for ch in Text.lower():
     if ch in "aeiou":
-        count==1
-print("Vowels=",count)           
+        count+=1
+print("Vowels=",count)#count vowels
+text="Iam a programmer that can work on python language"
+count=0
+for ch in Text.lower():
+    if ch.isalpha() and ch not  in "aeiou":
+        count+=1
+print("number of consonants=",count)#count consonant
+text=input("enter a string:")   
+count=text.count(" ")
+print("Number of spaces=",count)#number of  space
+message=input("enter your string:")
+upper=0
+lower=0
+for ch in message:
+    if ch.isupper():
+        upper +=1
+    elif ch.islower()  :
+        lower +=1
+print("Uppercase letters=",upper)
+print("Lowercase letters=",lower)    #count the number of uppercase and lowercase letters
+text=input("enter a string:")
+print(text.replace(" ","-"))#replace every space with "-"
+text=input("enter a sting:")
+print(text.strip())#remove leading aand trailing spacces
+word=input("enter a word:")
+if word==word[::-1]:
+    print("palindrome")
+else:
+    print("not palindrome")#palindrome
+        
+
+
+
+
+
+
 
 
