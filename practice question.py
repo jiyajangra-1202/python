@@ -185,3 +185,20 @@ def get_employee():
     employee["name"] = input("Enter Employee Name: ")
 
     employee["basic"] = float(input("Enter Basic Salary: "))
+
+##project9:word counter
+def get_text():
+
+    text = input("Enter a paragraph: ")
+
+    return text
+
+##project10:bank account
+account = {}
+
+def create_account():
+    account["number"] = input("Enter Account Number: ")
+    account["name"] = input("Enter Account Holder Name: ")
+    account["balance"] = float(input("Enter Initial Balance: "))
+
+    print("Account Created Successfully!")
