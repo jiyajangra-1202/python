@@ -282,3 +282,624 @@
 
 # print("Uppercase:", upper)
 # print("Lowercase:", lower)
+
+# 1. Introduction to Python
+
+# Python is a high-level, interpreted, object-oriented, general-purpose programming language developed by Guido van Rossum in 1991.
+
+# Python is one of the easiest programming languages to learn because of its simple syntax and readability.
+
+# Where Python is Used
+# Artificial Intelligence
+# Machine Learning
+# Data Science
+# Web Development
+# Automation
+# Cyber Security
+# Game Development
+# Desktop Applications
+# Cloud Computing
+# Internet of Things (IoT)
+# Features of Python
+
+# ✔ Easy to Learn
+
+# ✔ Open Source
+
+# ✔ Free to Use
+
+# ✔ Platform Independent
+
+# ✔ Object-Oriented
+
+# ✔ Large Standard Library
+
+# ✔ Supports GUI Programming
+
+# ✔ Dynamically Typed
+
+# ✔ Automatic Memory Management
+
+# ✔ Interpreted Language
+
+# Advantages
+# Less code
+# Easy debugging
+# Huge community support
+# Cross-platform
+# Fast development
+# Disadvantages
+# Slower than C/C++
+# High memory usage
+# Not ideal for mobile apps
+# Runtime errors due to dynamic typing
+# First Python Program
+# print("Hello World")
+
+# Output
+
+# Hello World
+# Comments
+
+# Single-line comment
+
+# # This is a comment
+# print("Python")
+
+# Multi-line comment
+
+# """
+# This
+# is
+# a
+# multi-line
+# comment
+# """
+# Variables
+# Definition
+
+# A variable is a named memory location used to store data.
+
+# Example
+
+# name = "Rahul"
+# age = 20
+# marks = 89.5
+
+# Python automatically identifies the data type.
+
+# Rules for Naming Variables
+
+# Allowed
+
+# student_name
+# roll_no
+# _marks
+
+# Not Allowed
+
+# 1name
+# class
+# student-name
+# Valid Variable Examples
+# x = 10
+
+# name = "Amit"
+
+# price = 99.99
+
+# is_pass = True
+# Multiple Assignment
+# a = b = c = 100
+
+# print(a)
+# print(b)
+# print(c)
+
+# Output
+
+# 100
+# 100
+# 100
+# Multiple Variables
+# name, age, city = "Rahul", 20, "Delhi"
+
+# print(name)
+# print(age)
+# print(city)
+# Swapping Variables
+
+# Without third variable
+
+# a = 10
+# b = 20
+
+# a, b = b, a
+
+# print(a)
+# print(b)
+
+# Output
+
+# 20
+# 10
+# Important Points
+# Variable names are case-sensitive.
+# Use meaningful names.
+# Avoid Python keywords.
+# Data Types
+
+# Everything in Python is an object.
+
+# Use
+
+# type(variable)
+
+# to know its type.
+
+# Numeric Data Types
+# Integer (int)
+
+# Whole numbers.
+
+# x = 100
+
+# print(type(x))
+
+# Output
+
+# <class 'int'>
+# Float
+
+# Decimal numbers.
+
+# pi = 3.14
+
+# print(type(pi))
+
+# Output
+
+# <class 'float'>
+# Complex
+# z = 3 + 5j
+
+# print(type(z))
+
+# Output
+
+# <class 'complex'>
+# String
+
+# Collection of characters.
+
+# name = "Python"
+
+# print(name)
+
+# Access characters
+
+# name = "Python"
+
+# print(name[0])
+# print(name[3])
+
+# Output
+
+# P
+# h
+
+# Negative Indexing
+
+# name = "Python"
+
+# print(name[-1])
+
+# Output
+
+# n
+
+# Slicing
+
+# name = "Programming"
+
+# print(name[0:6])
+
+# Output
+
+# Progra
+
+# Useful String Functions
+
+# text = "python"
+
+# print(text.upper())
+
+# print(text.capitalize())
+
+# print(text.title())
+
+# print(len(text))
+# Boolean
+
+# Contains only
+
+# True
+
+# False
+
+# Example
+
+# is_student = True
+
+# print(type(is_student))
+# List
+
+# Ordered
+
+# Mutable
+
+# Allows duplicates
+
+# fruits = ["Apple","Banana","Mango"]
+
+# print(fruits)
+
+# Access
+
+# print(fruits[1])
+
+# Modify
+
+# fruits[1] = "Orange"
+
+# Append
+
+# fruits.append("Kiwi")
+# Tuple
+
+# Ordered
+
+# Immutable
+
+# numbers = (10,20,30)
+
+# print(numbers)
+# Set
+
+# Unordered
+
+# Unique elements
+
+# colors = {"Red","Blue","Green"}
+
+# print(colors)
+# Dictionary
+
+# Stores data as key-value pairs.
+
+# student = {
+
+# "name":"Amit",
+
+# "Age":20,
+
+# "Marks":90
+
+# }
+
+# print(student)
+
+# Access
+
+# print(student["Marks"])
+# Data Type Comparison
+# Data Type	Ordered	Mutable	Duplicate
+# List	Yes	Yes	Yes
+# Tuple	Yes	No	Yes
+# Set	No	Yes	No
+# Dictionary	Yes	Yes	Keys No
+# Type Conversion
+
+# Implicit
+
+# a = 10
+
+# b = 2.5
+
+# print(a+b)
+
+# Output
+
+# 12.5
+
+# Explicit
+
+# age = "20"
+
+# print(int(age))
+# User Input
+# name = input("Enter name : ")
+
+# print(name)
+
+# Input Integer
+
+# age = int(input("Enter age : "))
+
+# Input Float
+
+# salary = float(input("Salary : "))
+# Operators
+# Arithmetic
+# a = 10
+# b = 3
+
+# print(a+b)
+# print(a-b)
+# print(a*b)
+# print(a/b)
+# print(a//b)
+# print(a%b)
+# print(a**b)
+# Comparison
+# print(10 > 5)
+
+# print(5 == 5)
+
+# print(10 != 20)
+# Logical
+# print(True and False)
+
+# print(True or False)
+
+# print(not True)
+# Assignment
+# x = 10
+
+# x += 5
+
+# print(x)
+# Membership
+# text = "Python"
+
+# print("P" in text)
+# Identity
+# a = [1,2]
+
+# b = a
+
+# print(a is b)
+# Loops
+
+# A loop repeats a block of code multiple times.
+
+# Types
+
+# for loop
+# while loop
+# For Loop
+
+# Syntax
+
+# for variable in sequence:
+#     statement
+
+# Example
+
+# for i in range(5):
+
+#     print(i)
+
+# Output
+
+# 0
+# 1
+# 2
+# 3
+# 4
+
+# Range Examples
+
+# range(5)
+
+# range(1,6)
+
+# range(2,20,2)
+
+# Print Even Numbers
+
+# for i in range(2,21,2):
+
+#     print(i)
+
+# Print Table
+
+# num = 7
+
+# for i in range(1,11):
+
+#     print(num*i)
+
+# Sum of First 10 Numbers
+
+# total = 0
+
+# for i in range(1,11):
+
+#     total += i
+
+# print(total)
+
+# Output
+
+# 55
+# While Loop
+
+# Syntax
+
+# while condition:
+
+#     statement
+
+# Example
+
+# i = 1
+
+# while i <= 5:
+
+#     print(i)
+
+#     i += 1
+# Infinite Loop
+# while True:
+
+#     print("Hello")
+
+# Stop using Ctrl + C in the terminal.
+
+# Loop Control Statements
+# Break
+# for i in range(10):
+
+#     if i == 5:
+
+#         break
+
+#     print(i)
+# Continue
+# for i in range(6):
+
+#     if i == 3:
+
+#         continue
+
+#     print(i)
+# Pass
+# for i in range(5):
+
+#     pass
+# Nested Loop
+# for i in range(1,4):
+
+#     for j in range(1,4):
+
+#         print(i,j)
+
+# Output
+
+# 1 1
+
+# 1 2
+
+# 1 3
+
+# 2 1
+
+# 2 2
+
+# 2 3
+
+# 3 1
+
+# 3 2
+
+# 3 3
+# Extra Practice Programs
+# 1. Find Largest Number
+# a = int(input("First Number: "))
+# b = int(input("Second Number: "))
+
+# if a > b:
+#     print("Largest:", a)
+# else:
+#     print("Largest:", b)
+# 2. Count Vowels in a String
+# text = input("Enter a string: ")
+# count = 0
+
+# for ch in text.lower():
+#     if ch in "aeiou":
+#         count += 1
+
+# print("Vowels:", count)
+# 3. Reverse a String
+# text = input("Enter a string: ")
+# print("Reverse:", text[::-1])
+# 4. Find Factorial
+# num = int(input("Enter a number: "))
+# fact = 1
+
+# for i in range(1, num + 1):
+#     fact *= i
+
+# print("Factorial:", fact)
+# 5. Check Prime Number
+# num = int(input("Enter a number: "))
+
+# if num < 2:
+#     print("Not Prime")
+# else:
+#     is_prime = True
+#     for i in range(2, int(num ** 0.5) + 1):
+#         if num % i == 0:
+#             is_prime = False
+#             break
+
+#     if is_prime:
+#         print("Prime")
+#     else:
+#         print("Not Prime")
+# 6. Fibonacci Series
+# n = int(input("Enter number of terms: "))
+
+# a, b = 0, 1
+
+# for _ in range(n):
+#     print(a, end=" ")
+#     a, b = b, a + b
+# 7. Frequency of Characters
+# text = input("Enter a string: ")
+# frequency = {}
+
+# for ch in text:
+#     frequency[ch] = frequency.get(ch, 0) + 1
+
+# print(frequency)
+# Common Errors Beginners Make
+# Forgetting indentation.
+# Using = instead of == in conditions.
+# Trying to modify tuples.
+# Accessing a list index that doesn't exist (IndexError).
+# Forgetting to convert input() to int or float before arithmetic.
+# Confusing is (identity) with == (value equality).
+# Exam Tips
+# Practice writing code without copying.
+# Dry-run programs on paper to understand execution flow.
+# Memorize the differences between list, tuple, set, and dictionary.
+# Learn common built-in functions: len(), type(), range(), sum(), max(), min(), sorted().
+# Focus on loops and conditional statements, as they are frequently tested.
+# Frequently Asked Interview/Exam Questions
+# What is Python? List its advantages.
+# What is the difference between an interpreter and a compiler?
+# What is a variable? Explain variable naming rules.
+# Differentiate between mutable and immutable data types.
+# Compare a list and a tuple.
+# What is the difference between a set and a dictionary?
+# Explain implicit and explicit type conversion with examples.
+# What is the difference between a for loop and a while loop?
+# Explain the use of break, continue, and pass.
+# Write programs to:
+# Find the factorial of a number.
+# Check whether a number is prime.
+# Print the Fibonacci series.
+# Reverse a string.
+# Count vowels in a string.
+# Find the largest of two or three numbers.
+# Quick Revision Summary
+# Variables store values in memory and follow naming rules.
+# Data Types include int, float, complex, bool, str, list, tuple, set, and dict.
+# Lists are ordered and mutable; tuples are ordered and immutable.
+# Sets store unique, unordered elements; dictionaries store key-value pairs.
+# Use input() to read user input and type() to check a variable's type.
+# For loops are best when the number of iterations is known; while loops are useful when repetition depends on a condition.
+# Use break to exit a loop, continue to skip an iteration, and pass as a placeholder.
