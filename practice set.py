@@ -1381,20 +1381,20 @@
 # Program 1: Student Result
 # marks = int(input("Enter Marks: "))
 
-# if marks >= 90:
-#     print("Excellent")
+if marks >= 90:
+    print("Excellent")
 
-# elif marks >= 75:
-#     print("Very Good")
+elif marks >= 75:
+    print("Very Good")
 
-# elif marks >= 50:
-#     print("Good")
+elif marks >= 50:
+    print("Good")
 
-# elif marks >= 35:
-#     print("Pass")
+elif marks >= 35:
+    print("Pass")
 
-# else:
-#     print("Fail")
+else:
+    print("Fail")
 # Program 2: Count Digits, Letters, and Special Characters
 # text = input("Enter Text: ")
 
