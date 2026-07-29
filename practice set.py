@@ -903,3 +903,591 @@
 # Use input() to read user input and type() to check a variable's type.
 # For loops are best when the number of iterations is known; while loops are useful when repetition depends on a condition.
 # Use break to exit a loop, continue to skip an iteration, and pass as a placeholder.
+
+# Python is a high-level, interpreted, object-oriented, and general-purpose programming language. It is one of the easiest programming languages because its syntax is simple and similar to English.
+
+# Python is widely used in:
+
+# Artificial Intelligence
+# Machine Learning
+# Data Science
+# Automation
+# Web Development
+# Cyber Security
+# Game Development
+# 2. Conditional Statements
+# What is a Conditional Statement?
+
+# A conditional statement is used to make decisions in a program.
+
+# It executes a block of code based on whether a condition is True or False.
+
+# Real-Life Example
+
+# Suppose you go to an ATM.
+
+# If your PIN is correct:
+
+# Money is withdrawn.
+
+# Otherwise:
+
+# Transaction is cancelled.
+
+# Similarly, Python checks conditions.
+
+# Types of Conditional Statements
+# if
+# if-else
+# if-elif-else
+# Nested if
+# 2.1 if Statement
+# Syntax
+# if condition:
+#     statement
+# Example
+# age = 20
+
+# if age >= 18:
+#     print("Eligible for Voting")
+
+# Output
+
+# Eligible for Voting
+# Flow
+
+# Condition → True → Execute
+
+# Condition → False → Skip
+
+# Example 2
+# marks = 85
+
+# if marks >= 40:
+#     print("Pass")
+
+# Output
+
+# Pass
+# 2.2 if-else Statement
+# Syntax
+# if condition:
+#     statements
+# else:
+#     statements
+# Example
+# age = 15
+
+# if age >= 18:
+#     print("Eligible")
+# else:
+#     print("Not Eligible")
+
+# Output
+
+# Not Eligible
+# Example 2
+
+# Check Even or Odd
+
+# num = int(input("Enter Number: "))
+
+# if num % 2 == 0:
+#     print("Even Number")
+# else:
+#     print("Odd Number")
+# 2.3 if-elif-else
+
+# Used when there are multiple conditions.
+
+# Syntax
+# if condition:
+#     statement
+
+# elif condition:
+#     statement
+
+# else:
+#     statement
+
+# Example
+
+# marks = int(input("Enter Marks: "))
+
+# if marks >= 90:
+#     print("Grade A")
+
+# elif marks >= 75:
+#     print("Grade B")
+
+# elif marks >= 60:
+#     print("Grade C")
+
+# elif marks >= 40:
+#     print("Grade D")
+
+# else:
+#     print("Fail")
+# 2.4 Nested if
+
+# One if statement inside another.
+
+# Example
+
+# age = 25
+# salary = 50000
+
+# if age >= 18:
+
+#     if salary >= 30000:
+#         print("Loan Approved")
+
+#     else:
+#         print("Low Salary")
+
+# else:
+#     print("Minor")
+# Logical Operators in Conditions
+# Operator	Meaning
+# and	Both conditions True
+# or	Any one condition True
+# not	Reverse condition
+
+# Example
+
+# age = 20
+# citizen = True
+
+# if age >= 18 and citizen:
+#     print("Eligible")
+# Important Points
+# Indentation is compulsory.
+# Conditions always return True or False.
+# Use == for comparison.
+# Never confuse = with ==.
+# Practice Programs
+# Largest among Three Numbers
+# a = int(input("First: "))
+# b = int(input("Second: "))
+# c = int(input("Third: "))
+
+# if a > b and a > c:
+#     print(a)
+
+# elif b > c:
+#     print(b)
+
+# else:
+#     print(c)
+# Leap Year
+# year = int(input("Enter Year: "))
+
+# if year % 400 == 0:
+#     print("Leap Year")
+
+# elif year % 100 == 0:
+#     print("Not Leap Year")
+
+# elif year % 4 == 0:
+#     print("Leap Year")
+
+# else:
+#     print("Not Leap Year")
+# 3. String
+# Definition
+
+# A string is a collection (sequence) of characters enclosed in:
+
+# Single quotes ' '
+# Double quotes " "
+# Triple quotes ''' ''' or """ """
+
+# Example
+
+# name = "Python"
+
+# city = 'Delhi'
+
+# paragraph = """Python is easy."""
+# String Characteristics
+# Ordered
+# Immutable
+# Allows duplicate characters
+# Supports indexing
+# Supports slicing
+# Indexing
+# P  y  t  h  o  n
+
+# 0  1  2  3  4  5
+
+# Negative Index
+
+# -6 -5 -4 -3 -2 -1
+
+# Example
+
+# text = "Python"
+
+# print(text[0])
+# print(text[-1])
+
+# Output
+
+# P
+# n
+# Slicing
+
+# Syntax
+
+# string[start:end:step]
+
+# Example
+
+# text = "Programming"
+
+# print(text[0:7])
+# print(text[3:])
+# print(text[:5])
+# print(text[::2])
+
+# Output
+
+# Program
+# gramming
+# Progr
+# Pormig
+# Common String Methods
+# text = "python programming"
+
+# print(text.upper())
+# print(text.lower())
+# print(text.title())
+# print(text.capitalize())
+# print(text.replace("python","Java"))
+# print(text.find("program"))
+# print(text.count("m"))
+# print(len(text))
+# print(text.split())
+# String Operators
+
+# Concatenation
+
+# a = "Hello"
+
+# b = "World"
+
+# print(a + " " + b)
+
+# Repetition
+
+# print("Hi " * 3)
+# Looping Through a String
+# word = "Python"
+
+# for ch in word:
+#     print(ch)
+# String Programs
+# Reverse String
+# text = input("Enter String: ")
+
+# print(text[::-1])
+# Palindrome
+# text = input("Enter String: ")
+
+# if text == text[::-1]:
+#     print("Palindrome")
+
+# else:
+#     print("Not Palindrome")
+# Count Vowels
+# text = input("Enter String: ")
+
+# count = 0
+
+# for ch in text.lower():
+
+#     if ch in "aeiou":
+#         count += 1
+
+# print(count)
+# 4. List
+# Definition
+
+# A list is an ordered, mutable collection that can store multiple values of different data types.
+
+# Example
+
+# numbers = [10,20,30,40]
+# Features
+# Ordered
+# Mutable
+# Duplicate values allowed
+# Dynamic size
+# Supports indexing and slicing
+# Accessing Elements
+# fruits = ["Apple","Banana","Mango"]
+
+# print(fruits[0])
+# print(fruits[-1])
+# Updating List
+# fruits[1] = "Orange"
+
+# print(fruits)
+# Important Methods
+
+# Append
+
+# fruits.append("Kiwi")
+
+# Insert
+
+# fruits.insert(1,"Pineapple")
+
+# Remove
+
+# fruits.remove("Apple")
+
+# Pop
+
+# fruits.pop()
+
+# Sort
+
+# numbers.sort()
+
+# Reverse
+
+# numbers.reverse()
+
+# Length
+
+# len(numbers)
+# List Traversal
+# numbers = [10,20,30]
+
+# for i in numbers:
+#     print(i)
+# Nested List
+# matrix = [
+
+# [1,2],
+
+# [3,4]
+
+# ]
+
+# print(matrix[1][0])
+
+# Output
+
+# 3
+# List Programs
+# Sum of List
+# numbers = [10,20,30,40]
+
+# print(sum(numbers))
+# Largest Number
+# numbers = [5,9,12,7]
+
+# print(max(numbers))
+# Remove Duplicates
+# numbers = [1,2,2,3,4,4]
+
+# unique = list(set(numbers))
+
+# print(unique)
+
+# Note: Converting to a set removes duplicates but may change the order of elements.
+
+# Find Second Largest
+# numbers = [15,60,25,70,45]
+
+# numbers.sort()
+
+# print(numbers[-2])
+# List Comprehension
+# square = [x*x for x in range(1,6)]
+
+# print(square)
+
+# Output
+
+# [1,4,9,16,25]
+# 5. Tuple
+# Definition
+
+# A tuple is an ordered, immutable collection of elements.
+
+# Example
+
+# numbers = (10,20,30)
+# Features
+# Ordered
+# Immutable
+# Duplicate values allowed
+# Faster than list
+# Supports indexing
+# Access Elements
+# numbers = (5,10,15)
+
+# print(numbers[0])
+# Tuple Packing
+# student = ("Aman",20,"Delhi")
+# Tuple Unpacking
+# name, age, city = student
+
+# print(name)
+# print(age)
+# Tuple Methods
+
+# Count
+
+# numbers = (10,20,10,40)
+
+# print(numbers.count(10))
+
+# Index
+
+# print(numbers.index(20))
+# Tuple Programs
+# Sum
+# numbers = (10,20,30)
+
+# print(sum(numbers))
+# Maximum
+# numbers = (15,22,50)
+
+# print(max(numbers))
+# Minimum
+# numbers = (15,22,50)
+
+# print(min(numbers))
+# Tuple Traversal
+# numbers = (10,20,30)
+
+# for i in numbers:
+#     print(i)
+# 6. Difference Between List and Tuple
+# Feature	List	Tuple
+# Syntax	[]	()
+# Mutable	Yes	No
+# Ordered	Yes	Yes
+# Duplicate Elements	Yes	Yes
+# Indexing	Yes	Yes
+# Slicing	Yes	Yes
+# Performance	Slightly slower	Faster
+# Memory Usage	Higher	Lower
+# 7. Comprehensive Practice Programs
+# Program 1: Student Result
+# marks = int(input("Enter Marks: "))
+
+# if marks >= 90:
+#     print("Excellent")
+
+# elif marks >= 75:
+#     print("Very Good")
+
+# elif marks >= 50:
+#     print("Good")
+
+# elif marks >= 35:
+#     print("Pass")
+
+# else:
+#     print("Fail")
+# Program 2: Count Digits, Letters, and Special Characters
+# text = input("Enter Text: ")
+
+# letters = digits = special = 0
+
+# for ch in text:
+
+#     if ch.isalpha():
+#         letters += 1
+
+#     elif ch.isdigit():
+#         digits += 1
+
+#     else:
+#         special += 1
+
+# print("Letters =", letters)
+# print("Digits =", digits)
+# print("Special =", special)
+# Program 3: Merge Two Lists
+# list1 = [1,2,3]
+# list2 = [4,5,6]
+
+# merged = list1 + list2
+
+# print(merged)
+# Program 4: Frequency of Each Character
+# text = input("Enter String: ")
+
+# frequency = {}
+
+# for ch in text:
+#     frequency[ch] = frequency.get(ch, 0) + 1
+
+# print(frequency)
+# Program 5: Search an Element in a Tuple
+# numbers = (10,20,30,40)
+
+# item = int(input("Enter Number: "))
+
+# if item in numbers:
+#     print("Found")
+
+# else:
+#     print("Not Found")
+# 8. Frequently Asked Questions
+# What is a conditional statement?
+# Explain the difference between if, if-else, and if-elif-else.
+# What is a nested if statement?
+# What is a string? Explain indexing and slicing.
+# What are common string methods?
+# What is a list? Why is it mutable?
+# Explain list comprehension with an example.
+# What is a tuple? Why is it immutable?
+# Compare lists and tuples.
+# When should you use a tuple instead of a list?
+# 9. Important Examination Points
+# Remember the syntax of all conditional statements.
+# Practice string indexing and slicing thoroughly.
+# Learn common string methods (upper(), lower(), split(), replace(), find(), count()).
+# Be comfortable using list methods (append(), insert(), remove(), pop(), sort(), reverse()).
+# Understand that tuples cannot be modified after creation.
+# Know the difference between mutable (list) and immutable (tuple) objects.
+# Practice writing programs using loops with strings, lists, and tuples.
+# 10. Quick Revision Notes
+# Conditional Statements
+# Used for decision-making.
+# Types: if, if-else, if-elif-else, nested if.
+# Logical operators: and, or, not.
+# Strings
+# Ordered and immutable sequence of characters.
+# Support indexing, slicing, concatenation, and iteration.
+# Frequently used methods include upper(), lower(), replace(), find(), count(), split(), and join().
+# Lists
+# Ordered, mutable collections.
+# Can contain mixed data types and duplicate values.
+# Common methods: append(), extend(), insert(), remove(), pop(), sort(), reverse(), clear(), and copy().
+# Tuples
+# Ordered, immutable collections.
+# Suitable for fixed data that should not change.
+# Support indexing, slicing, count(), and index().
+# Recommended Practice
+
+# To master these topics, write and test programs for:
+
+# Even/odd number checker
+# Largest of three numbers
+# Grade calculator
+# Palindrome checker
+# Vowel and consonant counter
+# Word frequency counter
+# List sorting (ascending and descending)
+# Removing duplicates while preserving order
+# Matrix (nested list) operations
+# Tuple packing and unpacking
+# Searching and counting elements in tuples
