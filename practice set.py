@@ -1491,3 +1491,503 @@ else:
 # Matrix (nested list) operations
 # Tuple packing and unpacking
 # Searching and counting elements in tuples
+
+
+# python is a high-level, interpreted, object-oriented, and general-purpose programming language developed by Guido van Rossum in 1991. It is widely used because of its simple syntax and readability.
+
+# Applications of Python
+# Artificial Intelligence (AI)
+# Machine Learning (ML)
+# Data Science
+# Web Development
+# Automation
+# Cyber Security
+# Software Development
+# Game Development
+# Cloud Computing
+# Features of Python
+# Easy to Learn
+# Open Source
+# Platform Independent
+# Large Community Support
+# Extensive Libraries
+# Interpreted Language
+# Object-Oriented
+# 1. Python Loops
+# Definition
+
+# A loop is used to execute a block of code repeatedly until a specified condition becomes false.
+
+# Loops reduce code repetition and make programs efficient.
+
+# Types of Loops
+
+# There are two types of loops in Python:
+
+# for loop
+# while loop
+# A. for Loop
+# Syntax
+# for variable in sequence:
+#     statement
+# Example 1: Print Numbers
+# for i in range(1, 6):
+#     print(i)
+# Output
+# 1
+# 2
+# 3
+# 4
+# 5
+# Example 2: Print Student Names
+# students = ["Ram", "Shyam", "Mohan"]
+
+# for name in students:
+#     print(name)
+# Output
+# Ram
+# Shyam
+# Mohan
+# Example 3: Sum of Numbers
+# total = 0
+
+# for i in range(1, 11):
+#     total += i
+
+# print("Sum =", total)
+# Output
+# Sum = 55
+# B. while Loop
+# Syntax
+# while condition:
+#     statement
+# Example
+# count = 1
+
+# while count <= 5:
+#     print(count)
+#     count += 1
+
+# Output
+
+# 1
+# 2
+# 3
+# 4
+# 5
+# Loop Control Statements
+# 1. break
+
+# Stops the loop immediately.
+
+# for i in range(10):
+#     if i == 5:
+#         break
+#     print(i)
+
+# Output
+
+# 0
+# 1
+# 2
+# 3
+# 4
+# 2. continue
+
+# Skips the current iteration.
+
+# for i in range(6):
+#     if i == 3:
+#         continue
+#     print(i)
+
+# Output
+
+# 0
+# 1
+# 2
+# 4
+# 5
+# 3. pass
+
+# Acts as a placeholder.
+
+# for i in range(5):
+#     pass
+# Nested Loop
+# for i in range(1,4):
+#     for j in range(1,4):
+#         print(i, j)
+
+# Output
+
+# 1 1
+# 1 2
+# 1 3
+# 2 1
+# 2 2
+# 2 3
+# 3 1
+# 3 2
+# 3 3
+# Real-Life Example
+
+# Printing attendance of students.
+
+# students = ["Aman", "Riya", "Karan"]
+
+# for student in students:
+#     print(student, "Present")
+# Advantages of Loops
+# Reduce repetitive code
+# Save time
+# Easy to maintain
+# Improve readability
+# Suitable for automation
+# Important Interview Questions
+# Difference between for and while loop?
+# What is nested loop?
+# Difference between break and continue?
+# Can loops be infinite?
+# Practice Programs
+# Print Even Numbers
+# for i in range(2,21,2):
+#     print(i)
+# Multiplication Table
+# num = 7
+
+# for i in range(1,11):
+#     print(num,"x",i,"=",num*i)
+# Factorial using Loop
+# n = 5
+# fact = 1
+
+# for i in range(1,n+1):
+#     fact *= i
+
+# print(fact)
+# 2. Python Sets
+# Definition
+
+# A Set is an unordered, mutable collection of unique elements.
+
+# Duplicate values are automatically removed.
+# Sets do not support indexing.
+# Creating Sets
+# fruits = {"Apple", "Banana", "Orange"}
+# print(fruits)
+# Empty Set
+# s = set()
+
+# print(type(s))
+# Duplicate Removal
+# numbers = {10,20,30,20,10}
+
+# print(numbers)
+
+# Output
+
+# {10,20,30}
+# Set Operations
+# Add Element
+# students = {"Ram","Shyam"}
+
+# students.add("Mohan")
+
+# print(students)
+# Remove Element
+# students.remove("Ram")
+# Discard
+# students.discard("Rahul")
+
+# (No error if element doesn't exist.)
+
+# Union
+# A = {1,2,3}
+# B = {3,4,5}
+
+# print(A | B)
+
+# Output
+
+# {1,2,3,4,5}
+# Intersection
+# print(A & B)
+
+# Output
+
+# {3}
+# Difference
+# print(A - B)
+
+# Output
+
+# {1,2}
+# Symmetric Difference
+# print(A ^ B)
+
+# Output
+
+# {1,2,4,5}
+# Membership Testing
+# colors = {"Red","Blue","Green"}
+
+# print("Red" in colors)
+
+# Output
+
+# True
+# Applications of Sets
+# Remove duplicates
+# Database operations
+# Mathematical computations
+# Search optimization
+# Data analysis
+# Advantages
+# Fast searching
+# Unique elements
+# Mathematical operations
+# Memory efficient
+# Practice Program
+
+# Find common subjects.
+
+# student1 = {"Python","Java","C"}
+
+# student2 = {"Python","C++","Java"}
+
+# print(student1 & student2)
+# 3. Python Dictionary
+# Definition
+
+# A Dictionary stores data as key-value pairs.
+
+# Keys are unique.
+
+# Creating Dictionary
+# student = {
+#     "Name":"Amit",
+#     "Age":20,
+#     "Course":"BCA"
+# }
+
+# print(student)
+# Access Values
+# print(student["Name"])
+# Using get()
+# print(student.get("Age"))
+# Add New Item
+# student["City"] = "Delhi"
+
+# print(student)
+# Update Value
+# student["Age"] = 21
+# Delete Item
+# del student["Course"]
+# Loop Through Dictionary
+# for key,value in student.items():
+#     print(key,"=",value)
+# Dictionary Methods
+# Method	Purpose
+# keys()	Returns all keys
+# values()	Returns all values
+# items()	Returns key-value pairs
+# update()	Updates dictionary
+# pop()	Removes item
+# clear()	Removes all items
+# Nested Dictionary
+# students = {
+#     101:{
+#         "Name":"Rahul",
+#         "Marks":85
+#     },
+#     102:{
+#         "Name":"Priya",
+#         "Marks":91
+#     }
+# }
+
+# print(students[102]["Marks"])
+# Advantages
+# Fast lookup
+# Organized data
+# Flexible
+# Dynamic
+# Real-Life Example
+# employee = {
+#     "ID":101,
+#     "Name":"Raj",
+#     "Salary":45000,
+#     "Department":"HR"
+# }
+
+# for key,value in employee.items():
+#     print(key,":",value)
+# Practice Program
+
+# Count frequency of characters.
+
+# text = "python"
+
+# freq = {}
+
+# for ch in text:
+#     freq[ch] = freq.get(ch,0)+1
+
+# print(freq)
+
+# Output
+
+# {'p':1,'y':1,'t':1,'h':1,'o':1,'n':1}
+# 4. Recursion
+# Definition
+
+# Recursion is a programming technique in which a function calls itself to solve a problem.
+
+# Every recursive function must have:
+
+# Base Case: Stops the recursion.
+# Recursive Case: Calls itself with a smaller or simpler problem.
+
+# Without a base case, recursion will continue indefinitely until Python raises a RecursionError.
+
+# Syntax
+# def function_name(parameters):
+#     if base_condition:
+#         return value
+#     return function_name(modified_parameters)
+# Example 1: Print Numbers Using Recursion
+# def print_numbers(n):
+#     if n == 0:
+#         return
+#     print_numbers(n - 1)
+#     print(n)
+
+# print_numbers(5)
+# Output
+# 1
+# 2
+# 3
+# 4
+# 5
+# Example 2: Factorial Using Recursion
+# def factorial(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     return n * factorial(n - 1)
+
+# print(factorial(5))
+# Output
+# 120
+# Example 3: Fibonacci Series
+# def fibonacci(n):
+#     if n <= 1:
+#         return n
+#     return fibonacci(n - 1) + fibonacci(n - 2)
+
+# for i in range(8):
+#     print(fibonacci(i), end=" ")
+# Output
+# 0 1 1 2 3 5 8 13
+# Example 4: Sum of Digits
+# def sum_digits(n):
+#     if n == 0:
+#         return 0
+#     return (n % 10) + sum_digits(n // 10)
+
+# print(sum_digits(12345))
+# Output
+# 15
+# Example 5: Reverse a String
+# def reverse_string(text):
+#     if len(text) == 0:
+#         return ""
+#     return reverse_string(text[1:]) + text[0]
+
+# print(reverse_string("Python"))
+# Output
+# nohtyP
+# Advantages of Recursion
+# Simplifies complex problems.
+# Useful for tree and graph traversal.
+# Makes divide-and-conquer algorithms easier (e.g., Merge Sort, Quick Sort).
+# Produces elegant code for naturally recursive problems.
+# Limitations of Recursion
+# Higher memory usage due to the call stack.
+# Can be slower than iteration for simple tasks.
+# Deep recursion may cause a RecursionError.
+# Requires a correct base case to avoid infinite recursion.
+# Comparison Table
+# Feature	Loop	Recursion
+# Repeats code	Yes	Yes
+# Uses function calls	No	Yes
+# Memory usage	Low	Higher
+# Speed	Usually faster	Often slower
+# Best for	Simple repetition	Problems that naturally divide into smaller subproblems
+# Comprehensive Practice Programs
+# Program 1: Count Word Frequency Using a Dictionary
+# sentence = "python is easy and python is powerful"
+
+# words = sentence.split()
+# frequency = {}
+
+# for word in words:
+#     frequency[word] = frequency.get(word, 0) + 1
+
+# print(frequency)
+# Program 2: Remove Duplicate Elements Using a Set
+# numbers = [10, 20, 30, 20, 40, 10, 50]
+
+# unique_numbers = list(set(numbers))
+
+# print("Original List :", numbers)
+# print("Unique List   :", unique_numbers)
+# Program 3: Student Marks Management
+# students = {
+#     "Aman": 85,
+#     "Riya": 91,
+#     "Karan": 78,
+#     "Neha": 95
+# }
+
+# highest = max(students, key=students.get)
+
+# print("Top Student:", highest)
+# print("Marks:", students[highest])
+# Program 4: Prime Numbers Using Loops
+# for num in range(2, 21):
+#     is_prime = True
+
+#     for i in range(2, int(num ** 0.5) + 1):
+#         if num % i == 0:
+#             is_prime = False
+#             break
+
+#     if is_prime:
+#         print(num)
+# Program 5: Recursive Binary Search
+# def binary_search(arr, target, low, high):
+#     if low > high:
+#         return -1
+
+#     mid = (low + high) // 2
+
+#     if arr[mid] == target:
+#         return mid
+#     elif arr[mid] > target:
+#         return binary_search(arr, target, low, mid - 1)
+#     else:
+#         return binary_search(arr, target, mid + 1, high)
+
+# numbers = [2, 5, 8, 12, 16, 23, 38]
+# target = 16
+
+# index = binary_search(numbers, target, 0, len(numbers) - 1)
+
+# print("Element found at index:", index)
+# Key Points to Remember
+# Loops (for, while) automate repetitive tasks.
+# Sets store only unique elements and support efficient mathematical set operations.
+# Dictionaries organize data as key-value pairs with fast lookup by key.
+# Recursion solves problems by breaking them into smaller instances of the same problem and always requires a base case.
+# Choose loops for straightforward repetition and recursion for problems with recursive structures (such as trees, divide-and-conquer algorithms, and recursive mathematical definitions).
