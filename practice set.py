@@ -1991,3 +1991,246 @@ else:
 # Dictionaries organize data as key-value pairs with fast lookup by key.
 # Recursion solves problems by breaking them into smaller instances of the same problem and always requires a base case.
 # Choose loops for straightforward repetition and recursion for problems with recursive structures (such as trees, divide-and-conquer algorithms, and recursive mathematical definitions).
+
+# 1. Problem Statement
+
+# Write a Python program to print "Hello World" exactly 10 times using a loop.
+
+# 2. Objective
+# Learn the for loop.
+# Understand the use of range().
+# Practice repetitive execution.
+# 3. Theory
+
+# A loop allows a block of code to execute repeatedly.
+
+# Python provides:
+
+# for loop
+# while loop
+
+# Since we know the number of repetitions (10), a for loop is the best choice.
+
+# 4. Syntax
+# for variable in range(start, stop, step):
+#     statements
+
+# Example
+
+# for i in range(5):
+#     print(i)
+
+# Output
+
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5. Algorithm
+# Start.
+# Run a loop 10 times.
+# Print "Hello World" in each iteration.
+# Stop.
+# 6. Flow of Execution
+# Start
+#    │
+#    ▼
+# Loop starts
+#    │
+# Print Hello World
+#    │
+# Decrease remaining iterations
+#    │
+# Loop completed?
+#    │
+# Yes
+#    ▼
+# Stop
+# 7. Python Code
+# for i in range(10):
+#     print("Hello World")
+# 8. Line-by-Line Explanation
+# for i in range(10):
+# Creates a loop.
+# range(10) generates numbers from 0 to 9.
+# Total iterations = 10.
+# print("Hello World")
+
+# Prints the text in every iteration.
+
+# 9. Sample Output
+# Hello World
+# Hello World
+# Hello World
+# Hello World
+# Hello World
+# Hello World
+# Hello World
+# Hello World
+# Hello World
+# Hello World
+# 10. Dry Run
+# Iteration	Value of i	Output
+# 1	0	Hello World
+# 2	1	Hello World
+# 3	2	Hello World
+# 4	3	Hello World
+# 5	4	Hello World
+# 6	5	Hello World
+# 7	6	Hello World
+# 8	7	Hello World
+# 9	8	Hello World
+# 10	9	Hello World
+# 11. Time Complexity
+# O(n)
+
+# where n = 10
+
+# 12. Space Complexity
+# O(1)
+# 13. Alternative Method
+# count = 1
+
+# while count <= 10:
+#     print("Hello World")
+#     count += 1
+# 14. Real-world Application
+# Sending reminders
+# Displaying repeated messages
+# Running a task multiple times
+# Generating repeated reports
+# 15. Common Mistakes
+
+# ❌ Forgetting indentation
+
+# for i in range(10):
+# print("Hello")
+
+# Correct
+
+# for i in range(10):
+#     print("Hello")
+# 16. Interview Questions
+
+# Q1. Why is a for loop better than a while loop here?
+
+# Answer: Because the number of iterations is known.
+
+# 17. Viva Questions
+
+# Q. What does range(10) return?
+
+# Answer: Numbers from 0 to 9.
+
+# 18. Practice Questions
+# Print your name 20 times.
+# Print "Python" 15 times.
+# Print "Welcome" 100 times.
+# Program 2: Print Numbers from 1 to 100
+# 1. Problem Statement
+
+# Write a Python program to print all numbers from 1 to 100 using a loop.
+
+# 2. Objective
+# Learn how to use range(start, stop).
+# Understand sequential iteration.
+# 3. Algorithm
+# Start.
+# Use a for loop with range(1, 101).
+# Print each number.
+# Stop.
+# 4. Python Code
+# for i in range(1, 101):
+#     print(i)
+# 5. Line-by-Line Explanation
+# for i in range(1, 101):
+# Starts from 1.
+# Stops before 101, so the last value is 100.
+# print(i)
+
+# Prints the current number.
+
+# 6. Sample Output (First 10 Numbers)
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+# ...
+# 100
+# 7. Dry Run
+# Iteration	i	Output
+# 1	1	1
+# 2	2	2
+# 3	3	3
+# 4	4	4
+# 5	5	5
+# ...	...	...
+# 100	100	100
+# 8. Time Complexity
+# O(n)
+
+# where n = 100
+
+# 9. Space Complexity
+# O(1)
+# 10. Alternative Method
+# i = 1
+
+# while i <= 100:
+#     print(i)
+#     i += 1
+# 11. Real-world Application
+# Generating serial numbers
+# Printing roll numbers
+# Creating numbered reports
+# Displaying ranking lists
+# 12. Common Mistakes
+
+# ❌ Using:
+
+# range(1,100)
+
+# This prints only 1–99.
+
+# Correct:
+
+# range(1,101)
+# 13. Interview Questions
+
+# Q. Why does range(1, 101) print up to 100?
+
+# Answer: The stop value in range() is exclusive, so 101 is not included.
+
+# 14. Viva Questions
+
+# Q. What are the parameters of range()?
+
+# Answer: range(start, stop, step).
+
+# 15. Practice Questions
+# Print numbers from 50 to 100.
+# Print numbers from 100 down to 1.
+# Print every fifth number from 1 to 100.
+
+# This is the level of detail I will use for all remaining 55 programs, including:
+
+# Print even numbers
+# Print odd numbers
+# Sum of first N numbers
+# Multiplication table
+# Factorial using loop
+# Fibonacci series
+# Reverse a number
+# Palindrome number
+# Prime number
+# Armstrong number
+# Star and pyramid patterns
+# Menu-driven calculator
+# and then all Sets, Dictionary, and Recursion programs in the same structured format.
