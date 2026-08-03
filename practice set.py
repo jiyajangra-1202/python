@@ -2625,3 +2625,272 @@ Output
 # Avoid unnecessary nested loops for large lists.
 # Use list comprehensions for concise and readable code where suitable.
 # Validate indices before accessing elements.
+
+
+# An array is a collection of elements stored in a sequence. Every element is identified by an index, which starts from 0.
+
+# Example:
+
+# Index :   0   1   2   3   4
+
+# Array :  10  20  30  40  50
+
+# In languages like C and Java, arrays usually store only one data type.
+
+# Python primarily uses Lists as dynamic arrays.
+
+# Example
+
+numbers = [10, 20, 30, 40, 50]
+# Why Python Uses Lists
+
+# Python lists are:
+
+# Dynamic
+# Easy to use
+# Resize automatically
+# Store different data types
+# Built into Python
+
+# Example
+
+# student = ["Rahul", 20, 85.5, True]
+# print(student)
+
+# Output
+
+# ['Rahul', 20, 85.5, True]
+# Features of Python Lists
+# Ordered
+# Mutable
+# Dynamic
+# Indexed
+# Supports duplicate values
+# Allows mixed data types
+# Supports nesting
+# Creating Arrays
+# Method 1
+# numbers = [10,20,30,40]
+# print(numbers)
+# Method 2
+# fruits = list(("Apple","Mango","Orange"))
+# print(fruits)
+# Accessing Elements
+# numbers = [10,20,30,40,50]
+
+# print(numbers[0])
+# print(numbers[3])
+
+# Output
+
+# 10
+# 40
+# Negative Indexing
+# numbers=[10,20,30,40]
+
+# print(numbers[-1])
+# print(numbers[-2])
+
+# Output
+
+# 40
+# 30
+# Slicing
+# numbers=[10,20,30,40,50]
+
+# print(numbers[1:4])
+
+# Output
+
+# [20,30,40]
+# Updating Elements
+# numbers=[10,20,30]
+
+# numbers[1]=100
+
+# print(numbers)
+
+# Output
+
+# [10,100,30]
+# Deleting Elements
+# numbers=[10,20,30]
+
+# del numbers[1]
+
+# print(numbers)
+
+# Output
+
+# [10,30]
+# Traversing Arrays
+# numbers=[5,10,15,20]
+
+# for value in numbers:
+#     print(value)
+# Common List Methods
+# Method	Description
+# append()	Add element
+# insert()	Insert element
+# remove()	Remove value
+# pop()	Remove by index
+# clear()	Delete all elements
+# copy()	Copy list
+# sort()	Sort list
+# reverse()	Reverse list
+# count()	Count values
+# index()	Find index
+# extend()	Merge lists
+# Practice Programs
+# Program 1 Create an Array
+# numbers=[10,20,30,40]
+
+# print(numbers)
+# Program 2 Input Array from User
+# numbers=[]
+
+# for i in range(5):
+#     num=int(input("Enter Number: "))
+#     numbers.append(num)
+
+# print(numbers)
+# Program 3 Print Elements
+# numbers=[11,22,33,44]
+
+# for i in numbers:
+#     print(i)
+# Program 4 Find Length
+# numbers=[10,20,30,40]
+
+# print(len(numbers))
+# Program 5 Find Maximum
+# numbers=[25,68,41,92]
+
+# print(max(numbers))
+# Program 6 Find Minimum
+# numbers=[25,68,41,92]
+
+# print(min(numbers))
+# Program 7 Sum of Elements
+# numbers=[10,20,30,40]
+
+# print(sum(numbers))
+# Program 8 Average
+# numbers=[10,20,30,40]
+
+# average=sum(numbers)/len(numbers)
+
+# print(average)
+# Program 9 Reverse Array
+# numbers=[10,20,30,40]
+
+# numbers.reverse()
+
+# print(numbers)
+# Program 10 Sort Array
+# numbers=[55,11,77,22]
+
+# numbers.sort()
+
+# print(numbers)
+# Program 11 Descending Order
+# numbers=[55,11,77,22]
+
+# numbers.sort(reverse=True)
+
+# print(numbers)
+# Program 12 Search Element
+# numbers=[10,20,30,40]
+
+# key=30
+
+# if key in numbers:
+#     print("Found")
+# else:
+#     print("Not Found")
+# Program 13 Insert Element
+# numbers=[10,20,40]
+
+# numbers.insert(2,30)
+
+# print(numbers)
+# Program 14 Delete Element
+# numbers=[10,20,30,40]
+
+# numbers.remove(30)
+
+# print(numbers)
+# Program 15 Merge Arrays
+# list1=[10,20]
+
+# list2=[30,40]
+
+# list3=list1+list2
+
+# print(list3)
+# Program 16 Remove Duplicates
+# numbers=[10,20,20,30,30,40]
+
+# unique=list(set(numbers))
+
+# print(unique)
+# Program 17 Second Largest
+# numbers=[25,14,99,65]
+
+# numbers.sort()
+
+# print(numbers[-2])
+# Program 18 Count Frequency
+# numbers=[10,20,20,20,30]
+
+# print(numbers.count(20))
+# Program 19 Rotate Left
+# numbers=[10,20,30,40]
+
+# numbers=numbers[1:]+numbers[:1]
+
+# print(numbers)
+# Program 20 Rotate Right
+# numbers=[10,20,30,40]
+
+# numbers=numbers[-1:]+numbers[:-1]
+
+# print(numbers)
+# Program 21 Copy Array
+# numbers=[10,20,30]
+
+# copy=numbers.copy()
+
+# print(copy)
+# Program 22 Find Even Numbers
+# numbers=[10,15,20,25,30]
+
+# for i in numbers:
+#     if i%2==0:
+#         print(i)
+# Program 23 Find Odd Numbers
+# numbers=[10,15,20,25,30]
+
+# for i in numbers:
+#     if i%2!=0:
+#         print(i)
+# Program 24 Largest Using Loop
+# numbers=[25,45,12,98,67]
+
+# largest=numbers[0]
+
+# for i in numbers:
+#     if i>largest:
+#         largest=i
+
+# print(largest)
+# Program 25 Smallest Using Loop
+# numbers=[25,45,12,98,67]
+
+# smallest=numbers[0]
+
+# for i in numbers:
+#     if i<smallest:
+#         smallest=i
+
+# print(smallest)
