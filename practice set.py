@@ -2889,8 +2889,245 @@ numbers = [10, 20, 30, 40, 50]
 
 # smallest=numbers[0]
 
-# for i in numbers:
-#     if i<smallest:
-#         smallest=i
+for i in numbers:
+    if i<smallest:
+        smallest=i
 
-# print(smallest)
+print(smallest)
+
+
+# A variable is a named memory location used to store data. Python automatically creates the appropriate data type when a value is assigned.
+
+# Syntax
+# variable_name = value
+# Example
+# name = "Jiya"
+# age = 20
+# salary = 25000.50
+
+# print(name)
+# print(age)
+# print(salary)
+
+# Output
+
+# Jiya
+# 20
+# 25000.5
+# Why Variables are Important
+# Store data temporarily.
+# Make programs dynamic.
+# Improve code readability.
+# Reuse values multiple times.
+# Used in every Python application.
+# Essential in web development frameworks like Django and Flask.
+# Help manage user input and database values.
+# 2. Rules for Naming Variables
+
+# ✅ Can contain letters, digits and underscore.
+
+# student_name
+
+# ✅ Cannot start with a number.
+
+# ❌
+
+# 2name = "Rahul"
+
+# ✅ Case Sensitive
+
+# Age = 20
+# age = 30
+
+# print(Age)
+# print(age)
+
+# Output
+
+# 20
+# 30
+# 3. Multiple Variable Assignment
+# x, y, z = 10, 20, 30
+
+# print(x)
+# print(y)
+# print(z)
+# 4. Assign Same Value
+# a = b = c = 100
+
+# print(a)
+# print(b)
+# print(c)
+# 5. Swapping Variables
+
+# Python provides an elegant way.
+
+# a = 10
+# b = 20
+
+# a, b = b, a
+
+# print(a)
+# print(b)
+
+# Output
+
+# 20
+# 10
+# 6. Constants (By Convention)
+
+# Python doesn't have true constants.
+
+# PI = 3.14159
+
+# print(PI)
+# 7. Dynamic Typing
+
+# A variable can change its type during execution.
+
+# x = 100
+# print(type(x))
+
+# x = "Python"
+
+# print(type(x))
+
+# Output
+
+# <class 'int'>
+# <class 'str'>
+# 8. Data Types in Python
+
+# Python provides several built-in data types.
+
+# Data Type	Example
+# int	100
+# float	25.5
+# complex	2+5j
+# str	"Hello"
+# bool	True
+# list	[1,2,3]
+# tuple	(1,2,3)
+# set	{1,2,3}
+# dict	{"name":"Jiya"}
+# NoneType	None
+# Program 1: Integer
+# num = 150
+
+# print(num)
+# print(type(num))
+# Program 2: Float
+# price = 799.99
+
+# print(price)
+# print(type(price))
+# Program 3: String
+# language = "Python"
+
+# print(language)
+# print(type(language))
+# Program 4: Boolean
+# is_login = True
+
+# print(is_login)
+# print(type(is_login))
+# Program 5: List
+# subjects = ["Python", "HTML", "CSS"]
+
+# print(subjects)
+# print(type(subjects))
+# Program 6: Tuple
+# coordinates = (25.67, 81.45)
+
+# print(coordinates)
+# Program 7: Set
+# numbers = {10,20,30,20}
+
+# print(numbers)
+
+# Output
+
+# {10,20,30}
+# Program 8: Dictionary
+# student = {
+#     "name":"Jiya",
+#     "age":20,
+#     "course":"BCA"
+# }
+
+# print(student)
+# Program 9: None Type
+# result = None
+
+# print(result)
+# print(type(result))
+# Program 10: Check Data Type
+# value = 45.8
+
+# print(type(value))
+# Program 11 (Intermediate): Type Conversion
+# age = "21"
+
+# age = int(age)
+
+# print(age + 5)
+# Program 12 (Intermediate): User Input
+# name = input("Enter Name : ")
+
+# print("Welcome", name)
+# Program 13 (Advanced): Multiple Data Types
+# employee = {
+#     "id":101,
+#     "name":"Rohan",
+#     "skills":["Python","Django","SQL"],
+#     "salary":50000,
+#     "active":True
+# }
+
+# print(employee)
+# Program 14 (Advanced): Using isinstance()
+# salary = 35000
+
+# print(isinstance(salary, int))
+# print(isinstance(salary, float))
+
+# Output
+
+# True
+# False
+# Program 15 (Advanced): Type Hints
+
+# Type hints improve code readability and are widely used in professional projects.
+
+# def calculate_bonus(salary: float, percentage: float) -> float:
+#     return salary * percentage / 100
+
+# bonus = calculate_bonus(50000, 10)
+# print(bonus)
+# Advanced Concepts Used in Industry
+# Dynamic Typing: Variables can change type during execution.
+# Type Hints: Improve maintainability and IDE support.
+# Mutable vs Immutable Data Types: Lists and dictionaries are mutable; tuples and strings are immutable.
+# Type Conversion: Convert between compatible data types using int(), float(), str(), etc.
+# Runtime Type Checking: Use type() and isinstance() to validate data.
+# Structured Data: Dictionaries and lists are commonly used to represent JSON data in web APIs.
+# User Input Validation: Always validate and convert input before processing in real applications.
+# Real-World Internship Example
+
+# Suppose you are building an employee management system for a company.
+
+# employee = {
+#     "id": 101,
+#     "name": "Amit",
+#     "department": "IT",
+#     "salary": 55000.0,
+#     "is_active": True
+# }
+
+# print(f"Employee: {employee['name']}")
+# print(f"Department: {employee['department']}")
+# print(f"Salary: ₹{employee['salary']}")
+
+# This demonstrates how multiple data types work together to model real business data.
+
+# Best Practices
