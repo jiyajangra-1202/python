@@ -3319,3 +3319,194 @@ ote: Converting to a set removes duplicates but does not preserve the original o
 # Avoid unnecessary nested loops for large lists.
 # Use list comprehensions for concise and readable code where suitable.
 # Validate indices before accessing elements.
+
+# An array is a collection of multiple values stored together.
+
+# For example, instead of creating:
+
+# marks1 = 80
+# marks2 = 75
+# marks3 = 90
+# marks4 = 85
+
+# we can store them together:
+
+# marks = [80, 75, 90, 85]
+
+# In beginner-level Python, lists are commonly used like arrays.
+
+# Creating an array/list
+# numbers = [10, 20, 30, 40, 50]
+
+# print(numbers)
+
+# Output:
+
+# [10, 20, 30, 40, 50]
+# Accessing array elements
+
+# Python uses index numbers, starting from 0.
+
+# numbers = [10, 20, 30, 40, 50]
+
+# print(numbers[0])
+# print(numbers[2])
+# print(numbers[4])
+
+# Output:
+
+# 10
+# 30
+# 50
+# Negative indexing
+# numbers = [10, 20, 30, 40, 50]
+
+# print(numbers[-1])
+# print(numbers[-2])
+
+# Output:
+
+# 50
+# 40
+# Changing an element
+# numbers = [10, 20, 30, 40]
+
+# numbers[1] = 100
+
+# print(numbers)
+
+# Output:
+
+# [10, 100, 30, 40]
+# Adding elements
+# numbers = [10, 20, 30]
+
+# numbers.append(40)
+
+# print(numbers)
+
+# Output:
+
+# [10, 20, 30, 40]
+# Removing an element
+# numbers = [10, 20, 30, 40]
+
+# numbers.remove(30)
+
+# print(numbers)
+
+# Output:
+
+# [10, 20, 40]
+# Finding length
+# numbers = [10, 20, 30, 40, 50]
+
+# print(len(numbers))
+
+# Output:
+
+# 5
+# 2. Conditional Statements in Python
+
+# Conditional statements are used when we want Python to make decisions.
+
+# For example:
+
+# If marks are greater than or equal to 40 → Pass
+# Otherwise → Fail
+
+# Python mainly provides:
+
+# if
+# if-else
+# if-elif-else
+# Nested if
+# 2.1 if Statement
+# Syntax
+# if condition:
+#     statement
+
+# Example:
+
+# age = 20
+
+# if age >= 18:
+#     print("You are eligible to vote")
+
+# Output:
+
+# You are eligible to vote
+# Important
+
+# Python uses indentation instead of { }.
+
+# Correct:
+
+# if age >= 18:
+#     print("Eligible")
+
+# Incorrect:
+
+# if age >= 18:
+# print("Eligible")
+# 2.2 if-else
+
+# Used when there are two possible outcomes.
+
+# marks = 35
+
+# if marks >= 40:
+#     print("Pass")
+# else:
+#     print("Fail")
+
+# Output:
+
+# Fail
+# Example: Even or Odd
+# number = 10
+
+# if number % 2 == 0:
+#     print("Even number")
+# else:
+#     print("Odd number")
+
+# Output:
+
+# Even number
+# 2.3 if-elif-else
+
+# Used when there are multiple conditions.
+
+# Example: Grade calculation
+
+# marks = 85
+
+# if marks >= 90:
+#     print("Grade A+")
+# elif marks >= 80:
+#     print("Grade A")
+# elif marks >= 70:
+#     print("Grade B")
+# elif marks >= 60:
+#     print("Grade C")
+# else:
+#     print("Fail")
+
+# Output:
+
+# Grade A
+# 2.4 Nested if
+
+# An if statement inside another if statement is called a nested if.
+
+# age = 20
+# citizen = True
+
+# if age >= 18:
+#     if citizen:
+#         print("Eligible to vote")
+
+# Output:
+
+# Eligible to vote
